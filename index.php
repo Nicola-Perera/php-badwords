@@ -11,10 +11,7 @@ $text = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, re
 
 var_dump($text);
 
-$new_word = $_GET['ban'];
-var_dump('hai proibito la parola: ' . $new_word);
-
-$text = str_replace('Lorem', $_GET['ban']);
+$text = str_replace($_GET['ban'], '***', $text);
 
 var_dump($text);
 ?>
